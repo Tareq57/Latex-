@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{biblatex}
+
+\title{B1}
+\author{Sajib Acharjee Dip}
+\date{\today}
+
+\addbibresource{biblio.bib}
+\begin{document}
+
+\maketitle
+\section{Abstract}
+
+\section{Description}
+
+\section{Results}
+\subsection{Dataset}
+\subsection{Methods}
+\subsubsection{First Method}
+
+\textbf{This is bold font}
+\textit{This is italic text format}
+\textbf{\textit{This is bold and italic}}
+
+\section{List}
+\subsection{Unordered List}
+\begin{itemize}
+    \item Java
+    \item C++
+    \item Python
+\end{itemize}
+
+\subsection{Ordered List}
+\begin{enumerate}
+    \item CSE
+    \item EEE
+    \item ME
+\end{enumerate}
+
+\subsection{Nested List}
+\begin{enumerate}
+    \item CSE
+    \begin{enumerate}
+        \item CSE 300
+        \item CSE 308
+        \begin{enumerate}
+            \item Basic Latex Commands
+            \item Advanced Latex Commands
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+\section{Table}
+\begin{tabular}{|c|c|c|}
+    \hline
+    1 & 2 & 3 \\
+    \hline
+    4 & 5 & 6 \\ 
+    \hline
+      & 7 & 8 \\
+    \hline
+\end{tabular}
+\newpage
+\subsection{Use of c line}
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    Dhaka & 2 & 3 & 4 \\
+    \cline{1-1} \cline{3-3}
+    Ctg & 20 & 30 & 40 \\
+    \hline
+    
+\end{tabular}
+
+
+
+\subsection{Multi column Table}
+\begin{tabular}{|c|c|c|}
+    \hline
+    1 & 2 & 3 \\
+    \hline
+    \multicolumn{2}{|c}{Dhaka} & 3 \\
+    \hline
+\end{tabular}
+
+\subsection{Multi row table}
+\begin{tabular}{|c|c|c|}
+    \hline
+     1 & 2 & 3 \\
+     \hline
+     \multirow{2}{*}{Dhaka} & 3 & 4 \\
+     \cline{2-3}
+      & 7 & 9 \\
+      \hline
+\end{tabular}
+
+
+\subsection{Both}
+\begin{tabular}{|c|c|c|}
+    \hline
+     1 & 2 & 3 \\
+     \hline
+     \multicolumn{2}{|c|}{\multirow{2}{*}{Dhaka}} & 3 \\
+     \cline{3-3}
+     \multicolumn{2}{|c|}{} & 9 \\
+      \hline
+\end{tabular}
+
+\section{Image}    
+\begin{figure}
+    \centering
+    \includegraphics[width =0.8\textwidth]{pic.jpg}
+    \caption{ECE Building, BUET}
+    \label{fig:ece}
+\end{figure}
+
+See the ECE building here \ref{fig:ece}
+
+\section{Equation}
+$$ x = 2 $$
+\begin{equation}
+    x = 2
+\end{equation}
+
+\begin{equation}
+    x = \frac{x^2 + 4}{e^{-x+ 1} + \sin{x}}
+\end{equation}
+
+\begin{equation}
+    \sum_{i = 1}^{i = N} x^2
+\end{equation}
+ 
+ 
+\section{Bibliography}
+We used info from this paper  \cite{costello2001methylation} and from this paper \cite{abc}
+
+Cite also \cite{sample}
+
+\printbibliography
+
+\end{document}
